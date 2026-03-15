@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: aston-intensive-dz2  # Это имя должно совпадать с файлом в config-repo
+  cloud:
+    config:
+      uri: http://localhost:8888  # Адрес Config Server
+      fail-fast: true
+      retry:
+        max-attempts: 6
